@@ -1,11 +1,14 @@
-let count = 4
+let rows = 4;
+let pattern = "";
 
-while(count <= 4){
-    if(count =4 )
-    var string = `   *
-  ***
- *****
-*******`
-    console.log(string);
-    count++;
+for (let n = 1; n <= rows; n++){
+    for (let space = 1; space <= rows - n; space++){
+    pattern += " ";
 }
+
+for (let num = 1; num <= 2 * n - 1; num++){
+    pattern += "*";
+}
+pattern += "\n"
+}
+console.log(pattern);
